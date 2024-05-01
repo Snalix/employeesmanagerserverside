@@ -3,10 +3,14 @@ package tech.getemployees.employeemanager;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 import tech.getemployees.employeemanager.model.Employee;
 import tech.getemployees.employeemanager.service.EmployeeService;
+
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:4200/")
 @RestController
 @RequestMapping("/employee")
 public class EmployeeResoruce {
